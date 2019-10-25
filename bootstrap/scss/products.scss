@@ -1,0 +1,187 @@
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+
+body{
+  background: #222;
+  font-family: 'roboto, sans-serif';
+}
+
+h1{
+  font-family: 'Nothing You Could Do';
+  color: #FCF9EA;
+  font-size: 8rem;
+}
+
+p{
+  font-family: 'roboto, sans-serif';
+  color: #222;
+}
+.card{
+  background-color:#222 !important;
+}
+
+.card .card-body{
+  background-color:#222 !important;
+  margin-top: 1.75rem;
+  border-top: solid 1px #FCF9EA;
+  border-left: solid 1px #FCF9EA;
+  border-right: solid 1px #FCF9EA;
+  border-bottom: solid 1px #FCF9EA;
+}
+
+.card .card-body h3{
+  color: #FCF9EA;
+}
+
+.card button{
+  background-color:rgba(207,141,19,0.5);
+  
+  border-top: solid 1px #FCF9EA;
+  border-left: solid 1px #222;
+  border-right: solid 1px #FCF9EA;
+  border-bottom: solid 1px #222;
+}
+
+.card button:hover{
+  background-color: #cf8d13;
+  border-top: solid 1px #222;
+  border-left: solid 1px #FCF9EA;
+  border-right: solid 1px #222;
+  border-bottom: solid 1px #FCF9EA;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  border-bottom: 1px solid #FCF9EA;
+
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 70%;
+  // left: 10%;
+  margin: 50% 10% 0 10%;
+  border-bottom: 1px solid #FCF9EA;
+  // border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 0.5rem 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+/* $theme-colors: (
+  "dark":#222,
+  "light": #FCF9EA,
+  "primary": #AF0404,
+  "secondary": rgb(196,70,20),
+  "info": #cf8d13
+  ); */
+
