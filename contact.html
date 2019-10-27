@@ -1,30 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>AfriColors</title>
-    <meta charset= "utf-8 ">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content= "">
-    <meta name ="Africa Fashion" content = "Meta Tags, Metadata" />
-    <meta name ="author" content = "Kristel" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/styles.css"></link>
-  </head>
-  <body>
-  <!-- -->
-    <header>
-      <nav></nav>
-    </header>
-    <main></main>
-    <footer></footer>
 
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/dcb2f7c6de.js" crossorigin="anonymous"></script>
-  </body>
+<head>
+  <title>AfriColors</title>
+  <meta charset="utf-8 ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content= "">
+  <meta name="Africa Fashion" content="Meta Tags, Metadata" />
+  <meta name="author" content="Kristel" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/styling/contact/contact.css">
+  <!-- background:#222; (donkergrijs, meestal achtergrond)
+background:#AF0404; (rood)
+background: #cf8d13;(geel)
+background: rgb(196, 70, 20);(warm oranje)
+background-color: #FCF9EA; (bijna wit, licht geel)-->
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-8 p-3">
+        <div class="card oker p-3">
+
+          <h2>Heb je een vraag? Contacteer ons.</h2>
+          <form class="oker">
+            <div class="form-group">
+              <label for="Name">First Name & Last Name</label>
+              <input type="text" class="form-control" id="Name" aria-describedby="emailHelp"
+                placeholder="enter your name here">
+            </div>
+            <div class="form-group">
+              <label for="InputEmail1">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+                placeholder="enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="street, number, zip code, city">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" placeholder="leave your message here" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-warning center">Submit</button>
+          </form>
+
+        </div>
+      </div>
+
+
+      <div class="col-sm-12 col-md-4 p-3">
+
+        <div class="card oker p-3">
+          <p class="oker">
+            <h2>Afri Fashion </h2> Kon. Maria Hendrikaplein 5 <br> 9000 Gent <br>
+          </p>
+          <div id="map">
+            <div>
+              <iframe width="300px" height="300px"
+                src="https://maps.google.com/maps?width=505&amp;height=440&amp;hl=en&amp;q=Maria%20Hendrikaplein%2C%20Gent%2C%20Belgium+(Titel)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                frameborder="0" scrolling="no" marginheight="1em" marginwidth="1em">
+              </iframe>
+              <style>
+                #gmap_canvas img {
+                  max-width: none !important;
+                  background: none !important
+                }
+              </style>
+            </div><br />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <footer></footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/dcb2f7c6de.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
