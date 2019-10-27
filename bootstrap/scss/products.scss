@@ -46,19 +46,26 @@
 
 body{
   background: #222;
+  color:  #FCF9EA;
   font-family: 'roboto, sans-serif';
 }
 
 h1{
   font-family: 'Nothing You Could Do';
-  color: #FCF9EA;
   font-size: 8rem;
+}
+
+h2{
+  font-size: 6rem;
 }
 
 p{
   font-family: 'roboto, sans-serif';
   color: #222;
 }
+
+/*cards*/
+
 .card{
   background-color:#222 !important;
 }
@@ -78,7 +85,6 @@ p{
 
 .card button{
   background-color:rgba(207,141,19,0.5);
-  
   border-top: solid 1px #FCF9EA;
   border-left: solid 1px #222;
   border-right: solid 1px #FCF9EA;
@@ -93,6 +99,8 @@ p{
   border-bottom: solid 1px #FCF9EA;
 }
 
+/*hovereffect on cards*/
+
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -102,7 +110,6 @@ p{
   text-align: center;
   cursor: default;
   border-bottom: 1px solid #FCF9EA;
-
 }
 
 .hovereffect .overlay {
@@ -148,7 +155,7 @@ p{
   position: relative;
   font-size: 17px;
   background-color: transparent;
-  color: #FFF;
+  color: #FCF9EA;
   padding: 1em 0;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -159,7 +166,8 @@ p{
 }
 
 .hovereffect a, .hovereffect p {
-  color: #FFF;
+  color: #FCF9EA;
+  font-size: 1.25rem;
   padding: 0.5rem 0;
   opacity: 0;
   filter: alpha(opacity=0);
