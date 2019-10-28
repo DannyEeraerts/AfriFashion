@@ -75,6 +75,17 @@ p{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
   color: #222;
 }
+.start p{
+  color: #FCF9EA
+}
+.submenu a{
+  font-size: 2rem;
+}
+#clothes, #shoes, #headwear, #bags{
+  padding-top: 7rem;
+  margin-top: -7rem;
+}
+
 
 footer p{
   color:  #FCF9EA;
@@ -86,7 +97,7 @@ footer li, footer p, h4{
 nav a, footer h4 a{
   color:  #FCF9EA !important;
 }
-nav a:hover, footer h4 a:hover{
+nav a:hover, footer h4 a:hover, .rights a:hover{
   color: #c98b2c !important;
   text-decoration: none;
 } 
@@ -94,7 +105,7 @@ nav a:active{
   border: solid 1px #c98b2c !important;
 }
 .color {
-  color:#d34836 !important;
+  color:#c98b2c !important;
 }
 
 /*cards*/
