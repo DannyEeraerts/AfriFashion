@@ -10564,21 +10564,58 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   background: #222;
   color: #FCF9EA;
-  font-family: 'roboto, sans-serif';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
   font-family: 'Nothing You Could Do';
-  font-size: 8rem;
+  font-size: 6vw;
+  color: #c98b2c;
+  padding-top: 6rem;
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 4vw;
+}
+
+header li {
+  color: #FCF9EA;
+  font-size: 1.25rem;
+}
+
+hr {
+  color: #FCF9EA;
 }
 
 p {
-  font-family: 'roboto, sans-serif';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #222;
+}
+
+footer p {
+  color: #FCF9EA;
+  font-size: 1rem !important;
+}
+
+footer li, footer p, h4 {
+  color: #FCF9EA;
+}
+
+nav a, footer h4 a {
+  color: #FCF9EA !important;
+}
+
+nav a:hover, footer h4 a:hover {
+  color: #c98b2c !important;
+  text-decoration: none;
+}
+
+nav a:active {
+  border: solid 1px #c98b2c !important;
+}
+
+.color {
+  color: #d34836 !important;
 }
 
 /*cards*/
@@ -10721,12 +10758,17 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 5%;
 }
 
 .rights p {
-  margin-top: 20px;
+  margin-top: 1rem;
   letter-spacing: .1em;
   margin-right: 2px;
+}
+
+.middle p {
+  margin-top: 6.5rem;
 }
 
 .footer-bs {
@@ -10752,7 +10794,7 @@ p {
 
 .footer-bs .footer-brand p {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(252, 249, 234, 0.7);
 }
 
 .footer-bs .footer-nav ul.pages {
@@ -10767,19 +10809,19 @@ p {
 }
 
 .footer-bs .footer-nav ul.pages a {
-  color: white;
+  color: #fcf9ea;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .footer-bs .footer-nav ul.pages a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(252, 249, 234, 0.8);
   text-decoration: none;
   font-size: 13px;
 }
 
 .footer-bs .footer-nav h4 {
-  font-size: 11px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 10px;
@@ -10796,11 +10838,11 @@ p {
 }
 
 .footer-bs .footer-nav ul.list a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(252, 249, 234, 0.8);
 }
 
 .footer-bs .footer-nav ul.list a:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(252, 249, 234, 0.6);
   text-decoration: none;
 }
 
@@ -10810,7 +10852,7 @@ p {
 }
 
 .footer-bs .footer-social h4 {
-  font-size: 11px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -10820,11 +10862,11 @@ p {
 }
 
 .footer-bs .footer-social a {
-  color: white;
+  color: #fcf9ea;
 }
 
 .footer-bs .footer-social a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(252, 249, 234, 0.8);
   text-decoration: none;
 }
 
@@ -10838,7 +10880,7 @@ p {
 
 .footer-bs .footer-ns p {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(252, 249, 234, 0.7);
 }
 
 .social:hover {
