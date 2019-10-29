@@ -10578,6 +10578,24 @@ h2 {
   font-size: 4vw;
 }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 12vw;
+  }
+  h2 {
+    font-size: 10vw;
+  }
+  h3 .card-title {
+    font-size: 5vw !important;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .h3 .card-title {
+    font-size: 3vw !important;
+  }
+}
+
 header li {
   color: #FCF9EA;
   font-size: 1.25rem;
@@ -10592,8 +10610,16 @@ p {
   color: #222;
 }
 
-.start p {
+.start p, .submenu p, .start a {
   color: #FCF9EA;
+}
+
+.start p {
+  font-size: 1.25rem;
+}
+
+.start a:hover {
+  color: #c98b2c !important;
 }
 
 .submenu a {
@@ -10601,8 +10627,8 @@ p {
 }
 
 #clothes, #shoes, #headwear, #bags {
-  padding-top: 7rem;
-  margin-top: -7rem;
+  padding-top: 7rem !important;
+  margin-top: -7rem !important;
 }
 
 footer p {
@@ -10623,8 +10649,8 @@ nav a:hover, footer h4 a:hover, .rights a:hover {
   text-decoration: none;
 }
 
-nav a:active {
-  border: solid 1px #c98b2c !important;
+.border li a:hover {
+  border-color: solid 1px #c98b2c !important;
 }
 
 .color {
@@ -10682,8 +10708,7 @@ nav a:active {
   overflow: hidden;
   width: 80%;
   height: 70%;
-  margin: 50% 10% 0 10%;
-  border-bottom: 1px solid #FCF9EA;
+  margin: 45% 10% 0 10%;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -10953,5 +10978,7 @@ Multicoloured Hover Variations
   }
 }
 
-/*END FOOTER */
+/*
+END FOOTER
+*/
 /*# sourceMappingURL=products.css.map */
