@@ -1,0 +1,90 @@
+body {
+  background-color: #222;
+}
+
+.parent {
+  width: 100;
+  padding: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.child1 {
+  background-color: #222;
+  color: #FCF9EA;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 30px;
+}
+
+h1 {
+  font-family: 'Nothing You Could Do';
+  font-size: 4rem;
+  /*text-align: center;*/
+  color: #C98B2C;
+  padding-top: 5px;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+}
+
+.child2 {
+  background-color: #222;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 30px;
+  background-color: #c44614;
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+blockquote footer {
+  background-color: #222;
+  color: #c44614;
+  padding: 10px;
+}
+
+.child3 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+footer {
+  text-align: center;
+  background-color: #222;
+  color: #FCF9EA;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=about.css.map */
