@@ -8,12 +8,14 @@
   <meta name="description" content= "">
   <meta name="Africa Fashion" content="Meta Tags, Metadata" />
   <meta name="author" content="Kristel" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,800" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
 
+  <link rel="icon" type="image/png" href="assets/images/AF2.png" sizes="32x32">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styling/contact/contact.css">
+
   <!-- background:#222; (donkergrijs, meestal achtergrond)
 background:#AF0404; (rood)
 background: #cf8d13;(geel)
@@ -24,59 +26,105 @@ background-color: #FCF9EA; (bijna wit, licht geel)-->
 
 <body>
 
-  <div class="container">
-    <div class="row">
+  <!--header start-->
+  <header id="top" class="mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <div class="col-sm-12 col-md-8 p-3">
-        <div class="card oker p-3">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-5">
+          <li class="nav-item ml-4 mr-2 pr-5">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item pr-5">
+            <a class="nav-link" href="about.html">Our history</a>
+          </li>
+          <li class="nav-item pr-5">
+            <a class="nav-link" href="products.html">Collection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <img class="logofront mr-5" src="assets/images/LogoAF.png" alt="" width="50px" height="50px">
+      </div>
+    </nav>
+  </header>
+  <!--header end-->
 
-          <h2>Heb je een vraag? Contacteer ons.</h2>
-          <form class="oker">
-            <div class="form-group">
+  <!--start formulier (1 container, 1row, 2col, 2card, 1 form, 5 x form-group etc)-->
+  <div class="container-fluid">
+    <div class="row mx-md-2 mx-lg-5">
+
+      <div class="col-12 col-lg-8 py-3 py-lg-5 px-md-2 px-lg-4">
+        <div class="card oker vh-95 px-2 px-md-5 py-3">
+
+          <h2 class="text-center p-2">Do you have a request or question? Ask us!</h2>
+          <form class="oker" action="https://formspree.io/xlerwovb" method="POST">
+            <!--de actie met formspree maakt het formulier werkend, stuurt submissions naar mijn persoonlijk e-mailadres-->
+            <div class="form-group-sm">
               <label for="Name">First Name & Last Name</label>
-              <input type="text" class="form-control" id="Name" aria-describedby="emailHelp"
-                placeholder="enter your name here">
+              <input type="text" class="form-control border border-warning" name="name" id="name"
+                aria-describedby="emailHelp" placeholder="enter your name here">
             </div>
-            <div class="form-group">
+            <div class="form-group-sm">
               <label for="InputEmail1">Email address</label>
-              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
-                placeholder="enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <input type="email" class="form-control border border-warning" name="_replyto" id="InputEmail1"
+                aria-describedby="emailHelp" placeholder="enter email">
             </div>
-            <div class="form-group">
-              <label for="address">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="street, number, zip code, city">
+            <div class="form-group-sm">
+              <label for="address-street">Address: Street and number</label>
+              <input type="text" class="form-control border border-warning" name="address1" id="address-street"
+                placeholder="enter street + number">
             </div>
-            <div class="form-group">
+            <div class="form-group-sm">
+              <label for="address-city">Address: Zipcode and city</label>
+              <input type="text" class="form-control border border-warning" name="address2" id="address-city"
+                placeholder="enter zipcode + city">
+            </div>
+            <div class="form-group-sm">
               <label for="message">Message</label>
-              <textarea class="form-control" id="message" placeholder="leave your message here" rows="4"></textarea>
+              <textarea class="form-control border border-warning" name="message" id="message"
+                placeholder="leave your message here" rows="2"></textarea>
             </div>
-            <button type="submit" class="btn btn-lg btn-warning center">Submit</button>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-muted" for="exampleCheck1">I agree to the conditions of the <a
+                  class="text-light"
+                  href="https://createria.be/formulieren-klaar-voor-gdpr-hier-voorbeelden-email-marketing/"> Privacy
+                  Policy</a></label>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-md btn-warning">Submit</button>
+            </div>
+
+
+
+            <small id="" class="form-text text-muted">The personal data you provide is collected by AfriFashion and for
+              internal use only. We will never transfer your information to third parties without your authorisation.
+            </small>
           </form>
+
 
         </div>
       </div>
 
+      <!--einde formulier, start tweede col: kaart en adres-->
 
-      <div class="col-sm-12 col-md-4 p-3">
+      <div class="col-12 col-lg-4 py-3 py-lg-5 px-md-2 px-lg-4 text-center">
 
-        <div class="card oker p-3">
-          <p class="oker">
-            <h2>Afri Fashion </h2> Kon. Maria Hendrikaplein 5 <br> 9000 Gent <br>
-          </p>
-          <div id="map">
-            <div>
-              <iframe width="300px" height="300px"
-                src="https://maps.google.com/maps?width=505&amp;height=440&amp;hl=en&amp;q=Maria%20Hendrikaplein%2C%20Gent%2C%20Belgium+(Titel)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-                frameborder="0" scrolling="no" marginheight="1em" marginwidth="1em">
-              </iframe>
-              <style>
-                #gmap_canvas img {
-                  max-width: none !important;
-                  background: none !important
-                }
-              </style>
-            </div><br />
+        <div class="card oker vh-95 p-3 ">
+          <h2 class="p-3">AfriFashion </h2>
+          <p class="mt-n3">Kon. Astridlaan 185 <br> 9000 Ghent <br> Belgium</p>
+
+          <div class="py-5">
+            <iframe width="95%" height="305px"
+              src="https://maps.google.com/maps?q=KoniginAstridlaanGent%2C%20Belgium&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -84,9 +132,54 @@ background-color: #FCF9EA; (bijna wit, licht geel)-->
     </div>
   </div>
 
+  <!--start footer-->
+
+  <footer class="footer-bs">
+    <div class="row">
+      <div
+        class="col-12 col-lg-4 order-2 order-lg-1 footer-brand animated fadeInLeft d-flex align-items-center flex-column">
+        <img class="logo" src="assets/images/LogoAF.png" alt="logo AfriFashion">
+      </div>
+      <div
+        class="col-12 col-lg-4 order-1 order-lg-2 footer-nav animated fadeInUp d-flex align-items-center align-content-center flex-column">
+        <h4>— <a href="#top"> BACK TO TOP</a> —</h4>
+        <!-- <ul class="pages">
+    <div class="row">
+    <li><a href="index.html">Home </a></li>
+    <li><a href="about.html">Our history</a></li>
+    <li><a href="products.html">Collection</a></li>
+    <li><a href="contact.html">Contact us</a></li>
+    </div>
+    </ul> -->
+        <div class="middle rights">
+          <p> 2019 <span class="color">AfriFashion</span>, all rights reserved</p>
+        </div>
+      </div>
+      <div
+        class="col-12 col-lg-4 order-3 order-lg-2 footer-social animated fadeInDown d-flex align-items-center flex-column">
+        <h4>— Follow Us —</h4>
+        <ul class="icons">
+          <div class="row">
+            <li><a href="https://www.facebook.com/bootsnipp"><i id="social-fb"
+                  class="fab fa-facebook-square fa-3x social"></i></a></li>
+            <li><a href="https://twitter.com/bootsnipp"><i id="social-tw"
+                  class="fab fa-twitter-square fa-3x social"></i></a></li>
+            <li><a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp"
+                  class="fab fa-google-plus-square fa-3x social"></i></a>
+            <li><a href="mailto:bootsnipp@gmail.com"><i id="social-em"
+                  class="fa fa-envelope-square fa-3x social"></i></a></li>
+          </div>
+        </ul>
+        <div class="rights">
+          <p><a href="https://giphy.com/gifs/eddie-izzard-zssJ7ewAFktS8"> Terms&Conditions</a> •</p>
+          <p><a href="https://giphy.com/explore/cookie-monster"> Cookie Policy</a> •</p>
+          <p><a href="https://giphy.com/gifs/facebook-posts-privacy-7ny1pusfuMY6s"> Privacy Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-  <footer></footer>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
